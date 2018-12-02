@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<div style="float:left">
+<ul>
+	<li><a href="BookForm.html">Books</a></li>
+	<li><a href="CdForm.html">Music</a></li>
+	<li><a href="LapTopForm.html">Computers</a></li>
+</ul>
+</div>
+<div style = "float:left">
+  <h3>Shops for CDs</h3>
+  	<br/><br/>
+  	
+ <form action="CartServlet" method="GET">
+ <input type="hidden" name="command" value="ADD" />
+	
+	<input type="checkbox" name="Books" value="Justified by Justin Timberlake"> Justified by Justin Timberlake [$9.95]
+		<br/><br/>
+	<input type="checkbox" name="Books" value="Gold Dogger by Kanye West"> Gold Dogger by Kanye West [$8.95]
+		<br/><br/>
+	<input type="checkbox" name="Books" value="Sorry by Juston Beiber"> Sorry by Juston Beiber [$7.99]
+	
+	
+	<br/><br/>
+
+	<input type="submit" value="Add to Cart" />
+	
+</form> 	
+<form action="CartServlet" method="GET">
+    <input type="hidden" name="command" value="VIEW" />
+    <button>View Cart</button>
+</form>
+
+
+</div>
+</div>
+
+</body>
+</html>

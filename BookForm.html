@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<div style="float:left">
+<ul>
+	<li><a href="BookForm.html">Books</a></li>
+	<li><a href="CdForm.html">Music</a></li>
+	<li><a href="LapTopForm.html">Computers</a></li>
+</ul>
+</div>
+<div style = "float:left">
+  <h3>Shops for Books</h3>
+  	<br/><br/>
+
+ <form action="CartServlet" method="GET">
+    <input type="hidden" name="command" value="ADD" />
+	
+	<input type="checkbox" name="Books" value="Java Servlet Programming"> Java Servlet Programming [$29.95]
+		<br/><br/>
+	<input type="checkbox" name="Books" value="Oracle Database Programming"> Oracle Database Programming [$48.95]
+		<br/><br/>
+	<input type="checkbox" name="Books" value="Java Web Services"> Java Web Services [$27.99]
+
+	<br/><br/>
+
+	<input type="submit" value="Add to Cart" />
+</form> 	
+<form action="CartServlet" method="GET">
+    <input type="hidden" name="command" value="VIEW" />
+    <button>View Cart</button>
+   </form>	
+
+
+</div>
+</div>
+</body>
+</html>

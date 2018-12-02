@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<div style="float:left">
+<ul>
+	<li><a href="BookForm.html">Books</a></li>
+	<li><a href="CdForm.html">Music</a></li>
+	<li><a href="LapTopForm.html">Computers</a></li>
+</ul>
+</div>
+<div style = "float:left">
+  <h3>Shops for Laptops</h3>
+  	<br/><br/>
+  	
+ <form action="CartServlet" method="GET">
+    <input type="hidden" name="command" value="ADD" /> 
+	
+	<input type="checkbox" name="Books" value="Apple MacBook Pro with 13.3 Display"> Apple MacBook Pro with 13.3 Display [$1299.95]
+		<br/><br/>
+	<input type="checkbox" name="Books" value="Asus Laptop with Centino 2 Black"> Asus Laptop with Centino 2 Black [$958.95]
+		<br/><br/>
+	<input type="checkbox" name="Books" value="Sony VAIO Laptop with Core 2Duo Pink"> Sony VAIO Laptop with Core 2Duo Pink [$770.99]
+	
+	
+	<br/><br/>
+
+	<input type="submit" value="Add to Cart" />
+</form> 	
+
+<form action="CartServlet" method="GET">
+    <input type="hidden" name="command" value="VIEW" />
+    <button>View Cart</button>
+</form>
+</div>
+</div>
+</body>
+</html>
